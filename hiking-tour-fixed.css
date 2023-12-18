@@ -1,0 +1,429 @@
+:root {
+  --color-primary: hsl(243, 100%, 68%);
+  --color-pale-cyan: hsl(193, 100%, 96%);
+  --color-dark-cyan: hsl(192, 100%, 9%);
+  --color-blue: hsl(208, 11%, 55%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.two-three-four {
+  margin: 5%;
+  padding-bottom: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-navigation-list {
+  list-style: none;
+  display: flex;
+  display: none;
+}
+
+.header-socials-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links {
+  width: 20px;
+  display: inline-block;
+  fill: var(--color-primary)
+}
+
+.socials-imgs {
+  width: 100%;
+    
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+header h4 {
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 22px;
+  margin: 4px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h1 {
+  font-size: 38px;
+  color: white;
+  text-align: center;
+}
+
+
+.home-bottom-part p {
+  color: white;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.violet {
+  color: var(--color-primary);
+}
+
+.section-img {
+  width: 100%;
+}
+
+.home-bottom-part,
+.cta-part {
+  background-color: var(--color-primary);
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.section-home-button {
+  background-color: var(--color-primary);
+  color: white;
+  border-style: none;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 255, 0.2);
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.about {
+  padding-bottom: 60px;
+}
+
+.about-read-more {
+  text-decoration: none;
+}
+
+.tours {
+  position: relative;
+  padding: 30px 0;
+}
+
+
+
+.date-part {
+  background-color: var(--color-primary);
+  display: inline-block;
+  position: absolute;
+}
+
+.services h2 {
+  margin-top: 50px;
+}
+
+.services-bottom-part {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 40px 0 100px 0;
+}
+
+.services-parts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+}
+
+.services-title {
+  margin-bottom: 0px;
+}
+
+.services-paragraph {
+  text-align: center;
+  width: 70%;
+}
+
+.services-icon {
+  width: 14%;
+  background-color: var(--color-primary);
+  padding: 2%;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.tour-bottom-part {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 7px 13px -4px rgba(0, 0, 169, .2);
+  padding: 15px;
+}
+
+.most-bottom-part {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location-part {
+  display: flex; 
+  align-items: center;
+  width: 120px;
+}
+
+.location-icon {
+  fill: var(--color-primary);
+  width: 20%;
+}
+
+.length-price p {
+  line-height: 2px;
+}
+
+.all-tours {
+  text-align: center;
+  text-decoration: none;
+}
+
+.gallery :not(h2, span, input, button) {
+  background-color: var(--color-primary);
+}
+
+.cta-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 350px;
+  padding: 15px;
+}
+
+.cta-part-left {
+  width: 50%;
+  color: white;
+}
+
+.cta-part-left h2 {
+  text-align: center;
+}
+
+/* .cta-part-right {
+  width: 50%;
+  padding-left: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+} 
+
+.cta-input {
+  position: relative;
+  flex-grow: 2;
+}
+
+.cta-button {
+  position: absolute;
+  top: 10% ;
+  right: 0% ; 
+  border-style: none;
+} */
+
+form {
+  /* This bit sets up the horizontal layout */
+  display:flex;
+  flex-direction:row;
+  width: 45%;
+  
+  /* This bit draws the box around it */
+  border:1px solid grey;
+
+  /* I've used padding so you can see the edges of the elements. */
+  padding:1px;
+}
+
+input {
+  /* Tell the input to use all the available space */
+  flex-grow:2;
+  /* And hide the input's outline, so the form looks like the outline */
+  border:none;
+}
+
+/* remove the input focus blue box, it will be in the wrong place. */
+input:focus {
+  outline: none;
+}
+
+/* Add the focus effect to the form so it contains the button */
+form:focus-within { 
+  outline: 1px solid blue 
+}
+
+button {
+  /* Just a little styling to make it pretty */
+  border:1px solid blue;
+  background:blue;
+  color:white;
+}
+
+footer {
+  background-color: hsl(0, 0%, 13%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+footer a,
+small {
+  color: white;
+  text-decoration: none;
+}
+
+footer li {
+  padding-right: 10px;
+}
+
+.header-navigation-list-bottom {
+  display: flex;
+  list-style: none;
+}
+
+footer .socials {
+  padding: 25px;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
+
+
+@media screen and (min-width: 900px) {
+  .gallery-images {
+    display: flex;
+  }
+
+  .section-img {
+    
+  }
+
+  .section-img-gallery {
+    width: 25%;
+  }
+
+  .home-bottom-part {
+    background-image: url(images/001toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
+    background-blend-mode: multiply;
+    opacity: 0.85;
+  }
+
+  .about-content {
+    display: flex;
+    position: relative;
+  }
+
+  .about h2 {
+    margin-bottom: 45px;
+  }
+
+  .about-img-clone {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    border: 6px solid var(--color-primary);
+    z-index: -10;
+  }
+
+  .about-img, .about-text-part {
+    width: 50%;
+  }
+
+  .about-text-part {
+    padding-left: 30px;
+    text-align: justify; 
+    align-self: center;
+  }
+
+  .services-bottom-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.services-parts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center; 
+  position: relative;
+}
+
+.services-title, .services-paragraph {
+  align-self: center;
+  margin-left: 17%;
+  margin-bottom: 0px;
+}
+
+.services-icon {
+  align-self: self-start;
+  position: absolute;
+  top: 35px;
+  
+}
+
+.featured-no-h2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tours {
+  width: 33%;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+}
