@@ -268,19 +268,21 @@ form {
   display:flex;
   flex-direction:row;
   width: 45%;
+}
   
-  /* This bit draws the box around it */
+  /* This bit draws the box around it
   border:1px solid grey;
 
   /* I've used padding so you can see the edges of the elements. */
-  padding:1px;
-}
+  /* padding:1px;
+} */ 
 
 input {
   /* Tell the input to use all the available space */
   flex-grow:2;
   /* And hide the input's outline, so the form looks like the outline */
   border:none;
+  padding: 7px;
 }
 
 /* remove the input focus blue box, it will be in the wrong place. */
@@ -295,9 +297,9 @@ form:focus-within {
 
 button {
   /* Just a little styling to make it pretty */
-  border:1px solid blue;
-  background:blue;
-  color:white;
+border: none;
+  
+  color:black;
 }
 
 footer {
